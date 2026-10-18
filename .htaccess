@@ -1,0 +1,16 @@
+Options -Indexes
+DirectoryIndex index.php
+
+# Carpetas internas: no deben ser accesibles desde el navegador
+RewriteEngine On
+RewriteRule ^(src|templates|docs)(/|$) - [F,L]
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
