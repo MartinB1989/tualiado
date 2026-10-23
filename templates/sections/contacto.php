@@ -16,7 +16,6 @@ $field = function (string $k) use ($errors) {
       <h2>Hablemos de tu proyecto</h2>
       <ul class="contact__list">
         <li><strong>WhatsApp</strong><a href="https://wa.me/<?= e($cfg['whatsapp']) ?>" rel="noopener"><?= e($cfg['phone']) ?></a></li>
-        <li><strong>Email</strong><a href="mailto:<?= e($cfg['email']) ?>"><?= e($cfg['email']) ?></a></li>
         <li><strong>Zona</strong><span><?= e($cfg['zones']) ?> · <?= e($cfg['modality']) ?></span></li>
       </ul>
     </div>

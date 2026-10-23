@@ -8,14 +8,17 @@ Completá los campos marcados. Cuanto más concreto, mejor será el SEO y el cop
 - Tono de voz: cercano, profesional, sin jerga técnica
 
 ## Ubicación
-- Ciudad principal: [COMPLETAR]
-- Barrios / localidades cercanas a cubrir: [COMPLETAR]
+- Ciudad principal: Gregorio de Laferrere (Laferrere), partido de La Matanza, Zona Oeste del GBA, Buenos Aires, Argentina
+- Barrios / localidades cercanas a cubrir: todo La Matanza y Zona Oeste (listado en src/data/local.php)
 - ¿Atendés en persona, remoto o ambos?: [COMPLETAR]
 - Dirección (si se muestra públicamente) y horarios: [COMPLETAR]
 - WhatsApp / teléfono / email: [COMPLETAR]
 
 ## Propuesta de valor
 Ayudo a negocios de mi zona a ganar posicionamiento, clientes y visibilidad.
+
+## Precios
+No se publican precios ni orientativos: el precio final depende del alcance. Siempre "propuesta por escrito, sin compromiso".
 
 ## Servicios
 1. Páginas web para negocios locales (SEO local, WhatsApp, Google Maps) — precio orientativo: [COMPLETAR]

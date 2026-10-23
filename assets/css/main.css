@@ -162,6 +162,20 @@ svg { width: 1.4em; height: 1.4em; fill: none; stroke: currentColor; stroke-widt
 .project__thumb { position: absolute; width: 38%; right: -3%; bottom: -8%; border-radius: 12px; border: 4px solid var(--surface); box-shadow: 0 20px 40px rgba(0,0,0,.3); height: auto; animation: float 7s ease-in-out infinite; }
 .project--rev .project__thumb { right: auto; left: -3%; }
 
+/* Página local */
+.pains { list-style: none; padding: 0; margin: 0 0 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+.pain { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: var(--radius); padding: 20px 22px; font-weight: 500; }
+.pains__close { font-size: 1.15rem; font-weight: 600; margin: 0; }
+.grid--rubros { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.rubro { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; transition: transform .25s, box-shadow .25s, border-color .25s; }
+.rubro:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: var(--primary); }
+.rubro__icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 11px; background: var(--primary); color: var(--on-primary); margin-bottom: 14px; }
+.rubro p { font-size: .96rem; color: var(--muted); }
+.rubro__solucion { margin: 0; }
+.rubro p strong { color: var(--text); }
+.incluye__more { margin: 32px 0 0; font-weight: 600; }
+.zonas__sub { margin-top: 32px; }
+
 /* Pasos */
 .steps { list-style: none; counter-reset: s; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; padding: 0; margin: 0; }
 .step { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; }

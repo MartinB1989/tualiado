@@ -5,6 +5,9 @@ DirectoryIndex index.php
 RewriteEngine On
 RewriteRule ^(src|templates|docs)(/|$) - [F,L]
 
+# Página local: /la-matanza -> la-matanza.php
+RewriteRule ^la-matanza/?$ la-matanza.php [L]
+
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
 </IfModule>

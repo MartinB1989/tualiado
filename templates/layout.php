@@ -1,17 +1,20 @@
 <?php
 /** @var array $cfg */
 /** @var array $content */
-$canonical = rtrim($cfg['domain'], '/') . '/';
-$pageTitle = str_replace('{city}', $cfg['city'], $cfg['title']) . ' | ' . $cfg['brand'];
-$cfg['description'] = str_replace('{city}', $cfg['city'], $cfg['description']);
-$schema = [
+// Una página puede pasar $page (path, title, description, schema, nav, sections, wa_msg) para reemplazar los valores del index.
+$page = $page ?? [];
+$canonical = rtrim($cfg['domain'], '/') . ($page['path'] ?? '/');
+$pageTitle = $page['title'] ?? str_replace('{city}', $cfg['city'], $cfg['title']) . ' | ' . $cfg['brand'];
+$cfg['description'] = $page['description'] ?? str_replace('{city}', $cfg['city'], $cfg['description']);
+$navLinks = $page['nav'] ?? [['#servicios', 'Servicios'], ['#proyecto-1', 'Proyectos'], ['#proceso', 'Proceso'], ['#faq', 'Preguntas']];
+$waMsg = $page['wa_msg'] ?? 'Hola! Vi tu web y quiero hacer una consulta para mi negocio.';
+$schema = $page['schema'] ?? [
     '@context' => 'https://schema.org',
     '@type' => 'ProfessionalService',
     'name' => $cfg['brand'],
     'url' => $canonical,
     'description' => $cfg['description'],
     'telephone' => $cfg['phone'],
-    'email' => $cfg['email'],
     'areaServed' => $cfg['zones'],
     'address' => ['@type' => 'PostalAddress', 'addressLocality' => $cfg['city']],
 ];
@@ -63,10 +66,9 @@ $faqSchema = [
       <span class="logo__mark" aria-hidden="true">&lt;/&gt;</span><span><?= e($cfg['brand']) ?></span>
     </a>
     <nav class="nav" id="nav" aria-label="Principal">
-      <a href="#servicios">Servicios</a>
-      <a href="#proyecto-1">Proyectos</a>
-      <a href="#proceso">Proceso</a>
-      <a href="#faq">Preguntas</a>
+<?php foreach ($navLinks as [$href, $label]): ?>
+      <a href="<?= e($href) ?>"><?= e($label) ?></a>
+<?php endforeach; ?>
       <a href="#contacto" class="btn btn--sm">Contactar</a>
     </nav>
     <div class="header__actions">
@@ -83,17 +85,23 @@ $faqSchema = [
 
 <main id="contenido">
 <?php
-include __DIR__ . '/sections/hero.php';
-include __DIR__ . '/sections/servicios.php';
-foreach ($content['proyectos'] as $i => $p) {
-    $n = $i + 1;
-    $reverse = $i % 2 === 1;
-    include __DIR__ . '/sections/proyecto.php';
+if (isset($page['sections'])) {
+    foreach ($page['sections'] as $section) {
+        include __DIR__ . '/sections/' . $section . '.php';
+    }
+} else {
+    include __DIR__ . '/sections/hero.php';
+    include __DIR__ . '/sections/servicios.php';
+    foreach ($content['proyectos'] as $i => $p) {
+        $n = $i + 1;
+        $reverse = $i % 2 === 1;
+        include __DIR__ . '/sections/proyecto.php';
+    }
+    include __DIR__ . '/sections/proceso.php';
+    wa_cta($cfg, '¿Tenés un proyecto en mente? Consultá sin compromiso', 'Hola! Vi tu web y quiero consultar por un proyecto.');
+    include __DIR__ . '/sections/faq.php';
+    include __DIR__ . '/sections/contacto.php';
 }
-include __DIR__ . '/sections/proceso.php';
-wa_cta($cfg, '¿Tenés un proyecto en mente? Consultá sin compromiso', 'Hola! Vi tu web y quiero consultar por un proyecto.');
-include __DIR__ . '/sections/faq.php';
-include __DIR__ . '/sections/contacto.php';
 ?>
 </main>
 
@@ -104,14 +112,13 @@ include __DIR__ . '/sections/contacto.php';
       <p><?= e($cfg['zones']) ?> · <?= e($cfg['modality']) ?></p>
     </div>
     <div>
-      <a href="mailto:<?= e($cfg['email']) ?>"><?= e($cfg['email']) ?></a><br>
       <a href="https://wa.me/<?= e($cfg['whatsapp']) ?>" rel="noopener">WhatsApp <?= e($cfg['phone']) ?></a>
     </div>
     <p class="footer__copy">&copy; <?= date('Y') ?> <?= e($cfg['brand']) ?>. Todos los derechos reservados.</p>
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/<?= e($cfg['whatsapp']) ?>?text=<?= rawurlencode('Hola! Vi tu web y quiero hacer una consulta para mi negocio.') ?>" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp">
+<a class="wa-float" href="https://wa.me/<?= e($cfg['whatsapp']) ?>?text=<?= rawurlencode($waMsg) ?>" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5.2A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .8c-1-.4-1.8-1.2-2.2-2.2l.8-1-1-2z"/></svg>
   <span>WhatsApp</span>
 </a>
