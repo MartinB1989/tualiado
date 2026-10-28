@@ -1,0 +1,27 @@
+# TuAliado
+
+> TuAliado desarrolla sitios web, sistemas de gestión y aplicaciones móviles (Android e iOS) a medida para negocios. Trabajamos con responsabilidad sobre cada desarrollo: lo hacemos nuestro y damos lo mejor, con seguridad, SEO y diseño responsivo desde el primer día. Estamos en Gregorio de Laferrere, La Matanza, Zona Oeste, Buenos Aires, Argentina.
+
+## Por qué "TuAliado"
+Vimos de cerca cómo muchas agencias de software buscan mantener contento al cliente y seguir desarrollando sin hacerse responsables del resultado: entregas con baja seguridad, sin SEO, sin diseño responsivo, o proyectos simples cuyo objetivo es cobrar. Elegimos el nombre TuAliado porque queremos hacer lo contrario: tomar la responsabilidad del desarrollo como propia.
+
+## Qué hacemos
+- Sitios web: institucionales, landing pages, tiendas y catálogos online, rápidos, con SEO y pensados para el celular.
+- Sistemas de gestión a medida: ventas, stock, turnos y administración.
+- Apps móviles para Android e iOS, desde la idea hasta su publicación.
+- Soporte y mantenimiento, incluida la ficha de Google Maps.
+
+## Cómo trabajamos
+Consulta sin costo, propuesta por escrito con alcance, plazo y presupuesto antes de empezar, desarrollo por etapas con entregas para validar, y entrega con capacitación y soporte. No publicamos precios: cada proyecto se presupuesta según su alcance.
+
+## Páginas
+- [Inicio](https://tualiado.com/): servicios, proyectos, proceso y preguntas frecuentes.
+- [Páginas web y sistemas para negocios de La Matanza y Zona Oeste](https://tualiado.com/la-matanza): soluciones por rubro, qué incluye y zonas que cubrimos.
+
+## Proyectos
+- [Gigiad](https://gigiad.com): sistema de cálculo de presupuestos y gestión para pastelerías.
+- Onetick (proyecto finalizado): ticketing con QR, streaming en vivo y apps Android e iOS.
+
+## Contacto
+- WhatsApp: +5491155955602 (https://wa.me/5491155955602)
+- Email: j.martin.b1989@gmail.com
