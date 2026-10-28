@@ -3,7 +3,7 @@
 > TuAliado desarrolla sitios web, sistemas de gestión y aplicaciones móviles (Android e iOS) a medida para negocios. Trabajamos con responsabilidad sobre cada desarrollo: lo hacemos nuestro y damos lo mejor, con seguridad, SEO y diseño responsivo desde el primer día. Estamos en Gregorio de Laferrere, La Matanza, Zona Oeste, Buenos Aires, Argentina.
 
 ## Por qué "TuAliado"
-Vimos de cerca cómo muchas agencias de software buscan mantener contento al cliente y seguir desarrollando sin hacerse responsables del resultado: entregas con baja seguridad, sin SEO, sin diseño responsivo, o proyectos simples cuyo objetivo es cobrar. Elegimos el nombre TuAliado porque queremos hacer lo contrario: tomar la responsabilidad del desarrollo como propia.
+Demasiados desarrollos se entregan con seguridad deficiente, sin SEO y sin pensar en el celular, y se limitan a lo mínimo para cerrar la venta. Elegimos el nombre TuAliado para hacer lo contrario: asumir cada proyecto como propio, con responsabilidad por el resultado y el compromiso de dar lo mejor.
 
 ## Qué hacemos
 - Sitios web: institucionales, landing pages, tiendas y catálogos online, rápidos, con SEO y pensados para el celular.

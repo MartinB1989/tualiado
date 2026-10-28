@@ -32,6 +32,17 @@ return [
         ],
     ],
 
+    'porque' => [
+        'titulo' => 'Un aliado que se hace responsable',
+        'lead' => 'Demasiados desarrollos se entregan con seguridad deficiente, sin SEO y sin pensar en el celular, y se limitan a lo mínimo para cerrar la venta. Elegimos el nombre TuAliado para hacer lo contrario: asumir cada proyecto como propio, con responsabilidad por el resultado y el compromiso de dar lo mejor.',
+        'items' => [
+            ['titulo' => 'Responsabilidad', 'texto' => 'Hacemos nuestro cada desarrollo: lo probamos, te lo explicamos y seguimos a tu lado después de la entrega.', 'icon' => '<path d="M20 6 9 17l-5-5"/>'],
+            ['titulo' => 'Seguridad', 'texto' => 'Aplicamos buenas prácticas de seguridad en cada proyecto, también en los formularios y en los datos de tu negocio.', 'icon' => '<path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/>'],
+            ['titulo' => 'SEO desde el inicio', 'texto' => 'Textos, estructura y datos pensados para que Google entienda qué hacés y te encuentren, no como un extra.', 'icon' => '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>'],
+            ['titulo' => 'Pensado para el celular', 'texto' => 'Todo se ve y funciona bien en el celular, que es desde donde te buscan tus clientes.', 'icon' => '<rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/>'],
+        ],
+    ],
+
     'proyectos' => [
         [
             'tag' => 'Sistema de gestión',

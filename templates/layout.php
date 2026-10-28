@@ -16,6 +16,7 @@ $schema = $page['schema'] ?? [
     'description' => $cfg['description'],
     'telephone' => $cfg['phone'],
 ];
+$schema += schema_brand($cfg, $content['servicios']);
 if ($cfg['zones'] !== '') $schema['areaServed'] = $cfg['zones'];
 if ($cfg['city'] !== '') $schema['address'] = ['@type' => 'PostalAddress', 'addressLocality' => $cfg['city']];
 $faqSchema = [
@@ -41,6 +42,13 @@ $faqSchema = [
 <meta property="og:title" content="<?= e($pageTitle) ?>">
 <meta property="og:description" content="<?= e($cfg['description']) ?>">
 <meta property="og:url" content="<?= e($canonical) ?>">
+<meta property="og:site_name" content="<?= e($cfg['brand']) ?>">
+<meta property="og:locale" content="es_AR">
+<meta property="og:image" content="<?= e(asset_url($cfg, 'img/og.png')) ?>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="<?= e($cfg['brand']) ?>: sitios web, sistemas de gestión y apps móviles a medida">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#1F5FD1">
 <script>
 // Aplica el tema antes de pintar para evitar parpadeo.
@@ -94,6 +102,7 @@ if (isset($page['sections'])) {
 } else {
     include __DIR__ . '/sections/hero.php';
     include __DIR__ . '/sections/servicios.php';
+    include __DIR__ . '/sections/porque.php';
     foreach ($content['proyectos'] as $i => $p) {
         $n = $i + 1;
         $reverse = $i % 2 === 1;

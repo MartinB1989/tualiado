@@ -16,6 +16,30 @@ function asset(string $path): string
     return base_path() . '/assets/' . ltrim($path, '/');
 }
 
+/** URL absoluta de un asset (para Open Graph y schema). */
+function asset_url(array $cfg, string $path): string
+{
+    return rtrim($cfg['domain'], '/') . asset($path);
+}
+
+/** Datos de identidad y catálogo de servicios para el schema.org de cualquier página. */
+function schema_brand(array $cfg, array $servicios): array
+{
+    return [
+        'logo' => asset_url($cfg, 'img/logo.png'),
+        'image' => asset_url($cfg, 'img/og.png'),
+        'email' => $cfg['email'],
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Servicios de ' . $cfg['brand'],
+            'itemListElement' => array_map(fn($s) => [
+                '@type' => 'Offer',
+                'itemOffered' => ['@type' => 'Service', 'name' => $s['titulo'], 'description' => $s['texto']],
+            ], $servicios),
+        ],
+    ];
+}
+
 /** Imagen local assets/img/{seed}.(webp|jpg). Si falta, devuelve la ruta .webp (404 visible, sin fotos ajenas). */
 function photo(string $seed): string
 {

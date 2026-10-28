@@ -44,6 +44,7 @@ No se publican precios ni orientativos: el precio final depende del alcance. Sie
 
 ## Diferenciales y pruebas
 - Diferenciales que ya se comunican: trato directo y sin intermediarios, propuesta por escrito antes de empezar, consulta sin compromiso.
+- Historia de la marca (sección "Por qué TuAliado" en el index y en `llms.txt`): otras agencias entregan con baja seguridad, sin SEO y sin responsivo; TuAliado toma cada desarrollo como propio y da lo mejor. Cada punto publicado es una promesa: mantenerlo.
 - Proyectos reales (sin inventar):
   - **Gigiad** (https://gigiad.com): sistema de presupuestos y gestión para pastelerías. En línea; es el primer proyecto del sitio y tiene botón "Ver proyecto".
   - **Onetick**: ticketing con QR, streaming y apps Android/iOS. La empresa ya no existe, por eso se muestra como "Proyecto finalizado" y sin enlace.
@@ -62,6 +63,8 @@ No definida.
 - Estructura: `index.php` y `la-matanza.php` (landing local), `contacto.php`, `src/` (config, helpers, datos), `templates/`, `assets/`.
 - Imágenes locales en `assets/img/`. Si falta una, se ve un 404 (no hay imágenes de reemplazo).
 - `sitemap.xml` y `robots.txt` apuntan a `https://tualiado.com`.
+- SEO / IA: `llms.txt`, schema `ProfessionalService` con logo, imagen y catálogo de servicios, `FAQPage`, Open Graph y Twitter Card (`assets/img/og.png`, `assets/img/logo.png`). `/la-matanza.php` redirige (301) a `/la-matanza`.
+- `sitemap.xml` lleva `lastmod`: actualizarlo cuando cambie el contenido.
 
 ## Pendientes
 - Cambiar el email por uno con el dominio.

@@ -42,6 +42,7 @@ $page = [
         'url' => rtrim($cfg['domain'], '/') . $path,
         'description' => $description,
         'telephone' => $cfg['phone'],
+    ] + schema_brand($cfg, $content['servicios']) + [
         'address' => [
             '@type' => 'PostalAddress',
             'addressLocality' => 'Gregorio de Laferrere',

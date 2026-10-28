@@ -5,6 +5,10 @@ DirectoryIndex index.php
 RewriteEngine On
 RewriteRule ^(src|templates|docs)(/|$) - [F,L]
 
+# /la-matanza.php -> /la-matanza (301, una sola URL para la landing)
+RewriteCond %{THE_REQUEST} \s(/(?:[^\s?]*/)?)la-matanza\.php[\s?]
+RewriteRule ^la-matanza\.php$ %1la-matanza [R=301,L]
+
 # Página local: /la-matanza -> la-matanza.php
 RewriteRule ^la-matanza/?$ la-matanza.php [L]
 
