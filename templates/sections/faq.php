@@ -2,7 +2,7 @@
   <div class="container container--narrow">
     <header class="section__head reveal">
       <p class="eyebrow">Preguntas frecuentes</p>
-      <h2>Lo que suelen preguntarme</h2>
+      <h2>Lo que suelen preguntarnos</h2>
     </header>
     <div class="faq reveal">
       <?php foreach ($content['faq'] as $f): ?>

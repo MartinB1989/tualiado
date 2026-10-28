@@ -35,6 +35,8 @@ $faqSchema = [
 <title><?= e($pageTitle) ?></title>
 <meta name="description" content="<?= e($cfg['description']) ?>">
 <link rel="canonical" href="<?= e($canonical) ?>">
+<link rel="icon" href="<?= e(base_path()) ?>/favicon.ico" sizes="48x48">
+<link rel="icon" href="<?= e(asset('img/favicon.svg')) ?>" type="image/svg+xml" sizes="any">
 <meta property="og:type" content="website">
 <meta property="og:title" content="<?= e($pageTitle) ?>">
 <meta property="og:description" content="<?= e($cfg['description']) ?>">
@@ -110,6 +112,7 @@ if (isset($page['sections'])) {
     <div>
       <strong><?= e($cfg['brand']) ?></strong>
       <p><a href="mailto:<?= e($cfg['email']) ?>"><?= e($cfg['email']) ?></a></p>
+      <p><?= e($cfg['location']) ?></p>
     </div>
     <div>
       <a href="https://wa.me/<?= e($cfg['whatsapp']) ?>" rel="noopener">WhatsApp <?= e($cfg['phone']) ?></a>
@@ -118,7 +121,7 @@ if (isset($page['sections'])) {
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/<?= e($cfg['whatsapp']) ?>?text=<?= rawurlencode($waMsg) ?>" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp">
+<a class="wa-float" href="https://wa.me/<?= e($cfg['whatsapp']) ?>?text=<?= rawurlencode($waMsg) ?>" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5.2A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .8c-1-.4-1.8-1.2-2.2-2.2l.8-1-1-2z"/></svg>
   <span>WhatsApp</span>
 </a>

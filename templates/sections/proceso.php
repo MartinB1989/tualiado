@@ -1,7 +1,7 @@
 <section class="section" id="proceso">
   <div class="container">
     <header class="section__head reveal">
-      <p class="eyebrow">Cómo trabajo</p>
+      <p class="eyebrow">Cómo trabajamos</p>
       <h2>De la idea a la entrega en 4 etapas</h2>
     </header>
     <ol class="steps">

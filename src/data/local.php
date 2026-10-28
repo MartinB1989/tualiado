@@ -95,11 +95,11 @@ return [
     ],
 
     'faq' => [
-        ['¿Atendés en persona en La Matanza?', 'Sí. Si estás en Gregorio de Laferrere o cerca, podemos vernos en persona. Para el resto de La Matanza y Zona Oeste trabajamos por WhatsApp y videollamada, con el mismo seguimiento.'],
-        ['¿Cuánto cuesta una página web para mi negocio?', 'Depende de lo que necesites: no es lo mismo una página simple que un catálogo con stock o un sistema de gestión. Por eso no hay precios fijos: me contás tu caso y te paso una propuesta por escrito, sin compromiso, antes de empezar.'],
+        ['¿Atienden en persona en La Matanza?', 'Sí. Si estás en Gregorio de Laferrere o cerca, podemos vernos en persona. Para el resto de La Matanza y Zona Oeste trabajamos por WhatsApp y videollamada, con el mismo seguimiento.'],
+        ['¿Cuánto cuesta una página web para mi negocio?', 'Depende de lo que necesites: no es lo mismo una página simple que un catálogo con stock o un sistema de gestión. Por eso no hay precios fijos: nos contás tu caso y te pasamos una propuesta por escrito, sin compromiso, antes de empezar.'],
         ['Ya tengo Instagram, ¿necesito una página web?', 'Instagram sirve para mostrarte, pero la web es tuya, te encuentran en Google cuando buscan cerca y ahorra las preguntas repetidas (precios, horarios, stock). Se complementan.'],
-        ['¿Mi negocio va a aparecer en Google y en Maps?', 'Dejo todo preparado: textos, datos de contacto y tu ficha de Google Maps. Los resultados llevan tiempo y dependen de tu rubro y de la competencia en tu zona, por eso no prometo un puesto, pero sí una buena base.'],
-        ['¿Puedo cargar mis productos y el stock yo mismo?', 'Sí. Armo un panel simple para que agregues, modifiques y controles todo sin depender de nadie.'],
-        ['Mi negocio está en otro lugar de Zona Oeste, ¿trabajás igual?', 'Sí. Trabajo con negocios de toda La Matanza y Zona Oeste, y también a distancia.'],
+        ['¿Mi negocio va a aparecer en Google y en Maps?', 'Dejamos todo preparado: textos, datos de contacto y tu ficha de Google Maps. Los resultados llevan tiempo y dependen de tu rubro y de la competencia en tu zona, por eso no prometemos un puesto, pero sí una buena base.'],
+        ['¿Puedo cargar mis productos y el stock yo mismo?', 'Sí. Armamos un panel simple para que agregues, modifiques y controles todo sin depender de nadie.'],
+        ['Mi negocio está en otro lugar de Zona Oeste, ¿trabajan igual?', 'Sí. Trabajamos con negocios de toda La Matanza y Zona Oeste, y también a distancia.'],
     ],
 ];

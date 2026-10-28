@@ -2,8 +2,8 @@
   <div class="container">
     <header class="section__head reveal">
       <p class="eyebrow">Soluciones por rubro</p>
-      <h2>Qué puedo hacer por tu negocio</h2>
-      <p class="lead">Si tu rubro no está en la lista, escribime igual: la mayoría de los problemas se parecen.</p>
+      <h2>Qué podemos hacer por tu negocio</h2>
+      <p class="lead">Si tu rubro no está en la lista, escribinos igual: la mayoría de los problemas se parecen.</p>
     </header>
     <div class="grid grid--rubros">
       <?php foreach ($local['rubros'] as $i => $r): ?>

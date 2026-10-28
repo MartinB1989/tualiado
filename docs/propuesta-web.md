@@ -1,10 +1,10 @@
 # Propuesta: sitio web para captar clientes (desarrollo web y software)
 
-Basada en [negocio.md](negocio.md). Estado: **borrador para aprobación**. Todavía no se escribió código.
+Basada en [negocio.md](negocio.md). Estado: **sitio implementado**. Este documento conserva el plan original; donde difiere del sitio, manda lo indicado en la sección 9 y el código.
 
 ## 1. Objetivo
 
-Que un dueño de negocio local entienda en menos de 10 segundos qué ofrezco, vea pruebas reales (2 proyectos propios) y me contacte por WhatsApp o formulario.
+Que un dueño de negocio local entienda en menos de 10 segundos qué ofrezco, vea pruebas reales (proyectos propios) y nos contacte por WhatsApp o formulario.
 
 **Conversión principal:** clic en WhatsApp / envío de formulario.
 **Público:** (1) negocios locales que quieren más clientes; (2) negocios que necesitan catálogo/stock o un sistema de gestión a medida.
@@ -14,8 +14,8 @@ Que un dueño de negocio local entienda en menos de 10 segundos qué ofrezco, ve
 
 | # | Sección | Contenido | Notas |
 |---|---------|-----------|-------|
-| 1 | **Header** fijo | Logo, menú (Servicios, Proyectos, Proceso, Contacto), botón "Escribime", selector claro/oscuro | Se achica al hacer scroll |
-| 2 | **Hero** | Título de propuesta de valor ("Ayudo a negocios de [ciudad] a ganar clientes y visibilidad"), subtítulo, 2 botones (WhatsApp / Ver proyectos), ilustración | Animación de entrada suave |
+| 1 | **Header** fijo | Logo, menú (Servicios, Proyectos, Proceso, Contacto), botón "Contactar", selector claro/oscuro | Se achica al hacer scroll |
+| 2 | **Hero** | Título de propuesta de valor ("Ayudamos a negocios a ganar clientes y visibilidad"), subtítulo, 2 botones (WhatsApp / Ver proyectos), ilustración | Animación de entrada suave |
 | 3 | **Servicios** | 4 tarjetas: Páginas web locales, Catálogo online con stock, Sistemas de gestión, Otros (mantenimiento, hosting, Google Business Profile) | Precio orientativo si lo definís |
 | 4 | **Para quién es** | Rubros: ropa, peluquería, muebles, electrónica, corralón, masajes, electricista, cursos… | Ayuda al SEO local y a que el visitante se reconozca |
 | 5 | **Proyecto 1** (pantalla completa) | Ver sección 4 | `min-height: 100vh` |
@@ -154,7 +154,11 @@ Estos datos están como `[COMPLETAR]` en [negocio.md](negocio.md). Sin ellos dej
 1. **PHP puro con plantillas**, sin framework y **sin base de datos**.
 2. **Una sola página** con anclas.
 3. **Tipografía:** IBM Plex Sans (Google Fonts), sobria y corporativa, para dar un aspecto profesional y serio.
-4. **Imágenes:** públicas aleatorias (picsum.photos) como marcador; se reemplazan por imágenes propias y logo.
-5. **Formulario:** el botón "Enviar" valida los campos obligatorios (nombre, teléfono, rubro, servicio y mensaje; el email es opcional). Si todo está completo, redirige a WhatsApp con el mensaje armado. Se valida en el navegador y, como respaldo, en el servidor (`public/contacto.php`). No se guarda nada.
+4. **Imágenes:** locales en `assets/img/` (sin imágenes de reemplazo externas). Favicon SVG propio (`assets/img/favicon.svg`).
+5. **Formulario:** el botón "Enviar" valida los campos obligatorios (nombre, teléfono, rubro, servicio y mensaje; el email es opcional). Si todo está completo, redirige a WhatsApp con el mensaje armado. Se valida en el navegador y, como respaldo, en el servidor (`contacto.php`). No se guarda nada.
 6. **Contacto:** solo WhatsApp y email, visibles en la sección de contacto y el footer.
 7. **Testimonios:** no hay reales, por eso la sección se omite.
+8. **Voz en plural** en todo el sitio.
+9. **Landing local** `/la-matanza`, sin enlaces desde el index, para captar clientes de la zona; está en `sitemap.xml`.
+10. **Ubicación:** solo la landing la muestra en el contenido; el index la muestra únicamente en el footer. No se publican dirección, horarios ni redes.
+11. **Proyectos:** Gigiad (en línea, con enlace) y Onetick (finalizado, sin enlace).

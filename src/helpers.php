@@ -16,18 +16,15 @@ function asset(string $path): string
     return base_path() . '/assets/' . ltrim($path, '/');
 }
 
-/**
- * Imagen local assets/img/{seed}.(webp|jpg) si existe; si no, una foto pública
- * aleatoria (placeholder).
- */
-function photo(string $seed, int $w, int $h): string
+/** Imagen local assets/img/{seed}.(webp|jpg). Si falta, devuelve la ruta .webp (404 visible, sin fotos ajenas). */
+function photo(string $seed): string
 {
     foreach (['webp', 'jpg'] as $ext) {
         if (is_file(__DIR__ . '/../assets/img/' . $seed . '.' . $ext)) {
             return asset('img/' . $seed . '.' . $ext);
         }
     }
-    return 'https://picsum.photos/seed/' . rawurlencode($seed) . "/$w/$h";
+    return asset('img/' . $seed . '.webp');
 }
 
 /** Franja con botón directo a WhatsApp (mensaje prellenado según la sección). */
@@ -35,7 +32,7 @@ function wa_cta(array $cfg, string $text, string $msg): void
 {
     $url = 'https://wa.me/' . $cfg['whatsapp'] . '?text=' . rawurlencode($msg);
     echo '<div class="cta-band"><div class="container cta-band__in reveal"><p>' . e($text) . '</p>'
-        . '<a class="btn" href="' . e($url) . '" target="_blank" rel="noopener">Escribime por WhatsApp</a></div></div>';
+        . '<a class="btn" href="' . e($url) . '" target="_blank" rel="noopener">Escribinos por WhatsApp</a></div></div>';
 }
 
 /**
