@@ -2,7 +2,7 @@
 // Datos del negocio. Reemplazar los valores marcados como PLACEHOLDER (ver docs/negocio.md).
 return [
     'brand'    => 'TuAliado',
-    'domain'   => 'https://tualiado.com',
+    'domain'   => 'https://tualiadoweb.com',
     'city'     => '',                          // vacío a propósito: no se publica la ubicación en el index
     'zones'    => '',                          // vacío a propósito (la-matanza.php define la suya)
     'modality' => '',

@@ -4,7 +4,7 @@ Estado: datos confirmados para la publicación. Lo que no existe todavía figura
 
 ## Marca
 - Nombre / marca: TuAliado
-- Dominio: https://tualiado.com (sin `www`; la versión con `www` debe redirigir a esta)
+- Dominio: https://tualiadoweb.com (sin `www`; la versión con `www` debe redirigir a esta)
 - Tono de voz: cercano, profesional, sin jerga técnica
 - Voz: **siempre en plural** ("trabajamos", "escribinos", "contanos"), nunca en primera persona del singular
 
@@ -18,7 +18,7 @@ Estado: datos confirmados para la publicación. Lo que no existe todavía figura
 - Dirección: no se publica
 - Horarios: no definidos
 - Redes sociales: no definidas por ahora
-- Google Business Profile: pendiente; cuando exista, usar `https://tualiado.com/la-matanza` como sitio web
+- Google Business Profile: pendiente; cuando exista, usar `https://tualiadoweb.com/la-matanza` como sitio web
 
 ## Contacto
 - WhatsApp: +5491155955602 (`5491155955602` para los enlaces `wa.me`)
@@ -62,7 +62,7 @@ No definida.
 - PHP renderizado en servidor, sin framework y sin base de datos.
 - Estructura: `index.php` y `la-matanza.php` (landing local), `contacto.php`, `src/` (config, helpers, datos), `templates/`, `assets/`.
 - Imágenes locales en `assets/img/`. Si falta una, se ve un 404 (no hay imágenes de reemplazo).
-- `sitemap.xml` y `robots.txt` apuntan a `https://tualiado.com`.
+- `sitemap.xml` y `robots.txt` apuntan a `https://tualiadoweb.com`.
 - SEO / IA: `llms.txt`, schema `ProfessionalService` con logo, imagen y catálogo de servicios, `FAQPage`, Open Graph y Twitter Card (`assets/img/og.png`, `assets/img/logo.png`). `/la-matanza.php` redirige (301) a `/la-matanza`.
 - `sitemap.xml` lleva `lastmod`: actualizarlo cuando cambie el contenido.
 

@@ -15,8 +15,8 @@ Demasiados desarrollos se entregan con seguridad deficiente, sin SEO y sin pensa
 Consulta sin costo, propuesta por escrito con alcance, plazo y presupuesto antes de empezar, desarrollo por etapas con entregas para validar, y entrega con capacitación y soporte. No publicamos precios: cada proyecto se presupuesta según su alcance.
 
 ## Páginas
-- [Inicio](https://tualiado.com/): servicios, proyectos, proceso y preguntas frecuentes.
-- [Páginas web y sistemas para negocios de La Matanza y Zona Oeste](https://tualiado.com/la-matanza): soluciones por rubro, qué incluye y zonas que cubrimos.
+- [Inicio](https://tualiadoweb.com/): servicios, proyectos, proceso y preguntas frecuentes.
+- [Páginas web y sistemas para negocios de La Matanza y Zona Oeste](https://tualiadoweb.com/la-matanza): soluciones por rubro, qué incluye y zonas que cubrimos.
 
 ## Proyectos
 - [Gigiad](https://gigiad.com): sistema de cálculo de presupuestos y gestión para pastelerías.
