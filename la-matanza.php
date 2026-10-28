@@ -25,7 +25,7 @@ $page = [
     'path' => $path,
     'title' => $title,
     'description' => $description,
-    'wa_msg' => 'Hola! Vi tu página de La Matanza y quiero consultar para mi negocio.',
+    'wa_msg' => 'Hola! Vi tu web y quiero hacer una consulta para mi negocio.',
     'nav' => [
         [base_path() . '/', 'Inicio'],
         ['#rubros', 'Tu rubro'],
