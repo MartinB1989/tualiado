@@ -13,6 +13,6 @@
         </article>
       <?php endforeach; ?>
     </div>
-    <p class="reveal incluye__more"><a href="<?= e(base_path()) ?>/#proyecto-1">Ver proyectos que ya desarrollé &rarr;</a></p>
+    <p class="reveal incluye__more"><a href="<?= e(base_path()) ?>/#proyecto-1">Ver trabajos realizados &rarr;</a></p>
   </div>
 </section>

@@ -15,9 +15,9 @@ $schema = $page['schema'] ?? [
     'url' => $canonical,
     'description' => $cfg['description'],
     'telephone' => $cfg['phone'],
-    'areaServed' => $cfg['zones'],
-    'address' => ['@type' => 'PostalAddress', 'addressLocality' => $cfg['city']],
 ];
+if ($cfg['zones'] !== '') $schema['areaServed'] = $cfg['zones'];
+if ($cfg['city'] !== '') $schema['address'] = ['@type' => 'PostalAddress', 'addressLocality' => $cfg['city']];
 $faqSchema = [
     '@context' => 'https://schema.org',
     '@type' => 'FAQPage',
@@ -109,7 +109,7 @@ if (isset($page['sections'])) {
   <div class="container footer__in">
     <div>
       <strong><?= e($cfg['brand']) ?></strong>
-      <p><?= e($cfg['zones']) ?> · <?= e($cfg['modality']) ?></p>
+      <p><a href="mailto:<?= e($cfg['email']) ?>"><?= e($cfg['email']) ?></a></p>
     </div>
     <div>
       <a href="https://wa.me/<?= e($cfg['whatsapp']) ?>" rel="noopener">WhatsApp <?= e($cfg['phone']) ?></a>

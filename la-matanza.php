@@ -30,6 +30,7 @@ $page = [
         [base_path() . '/', 'Inicio'],
         ['#rubros', 'Tu rubro'],
         ['#incluye', 'Qué incluye'],
+        [base_path() . '/#proyecto-1', 'Trabajos realizados'],
         ['#zonas', 'Zonas'],
         ['#faq', 'Preguntas'],
     ],

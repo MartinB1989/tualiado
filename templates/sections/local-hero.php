@@ -15,7 +15,7 @@
       </ul>
     </div>
     <div class="hero__media reveal" style="--d:.15s">
-      <img src="<?= e(photo('hero-local', 900, 700)) ?>" width="900" height="700" alt="" fetchpriority="high">
+      <img src="<?= e(photo('hero-trabajo', 900, 700)) ?>" width="900" height="700" alt="" fetchpriority="high">
       <div class="float-card float-card--a"><span class="dot"></span> Aparecé en Google Maps</div>
       <div class="float-card float-card--b">Consultas por WhatsApp</div>
     </div>

@@ -46,7 +46,7 @@ return [
             'tag' => 'Sistema de gestión',
             'nombre' => 'Gigiad',
             'resumen' => 'Sistema de cálculo de presupuestos y gestión para pastelerías.',
-            'problema' => 'Quien empieza en la pastelería se enfrenta a una pregunta clave: ¿cuánto cobrar por mis creaciones? La respuesta no es simple: son muchas las variables y es fácil cometer errores al presupuestar.',
+            'problema' => 'El cliente buscaba solucionar un problema para quienes empiezan en la pastelería, estos se enfrenta a una pregunta clave: ¿cuánto cobrar por mis creaciones? La respuesta no es simple: son muchas las variables y es fácil cometer errores al presupuestar.',
             'solucion' => 'Un sistema de gestión para pastelerías que calcula presupuestos de forma dinámica según el precio de los ingredientes, y donde además se anotan los pedidos y se les hace seguimiento. Incluye un panel de administración centralizado para el dueño del sistema, con métricas clave para la toma de decisiones.',
             'resultado' => '',
             'features' => ['Carga de materiales', 'Cálculo automático de presupuestos', 'Seguimiento de pedidos', 'Panel de métricas clave'],
